@@ -8,6 +8,11 @@
 
 int main(void)
 {
-	printk("Hello World! %s\n", CONFIG_BOARD);
-	return 0;
+ 	while(1)
+ 	{
+
+		printk("Hello World! %s\n", CONFIG_BOARD);
+		K_sleep(K_SECONDS(1));
+		return 0;
+ 	}
 }
